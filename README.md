@@ -11,7 +11,7 @@ This demo includes a simple web to lead form that creates a lead in Salesforce.
 
 You can quickly spin up an org by clicking on the picture below. \
 This will create a scratch org that you have access to for 1 day \
-[![Demo scratch org](/.assets/deployDemo.png)](https://hosted-scratch.herokuapp.com/launch?template=https://github.com/ehsky/Netbil-demo)
+[![Demo scratch org](/.assets/deployDemo.png)](https://hosted-scratch.herokuapp.com/launch?template=https://github.com/ehsky/Nettbil-demo)
 
 # Demo content
 
