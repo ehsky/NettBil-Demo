@@ -9,6 +9,12 @@ This demo includes a simple web to lead form that creates a lead in Salesforce.
 
 ## Hands-on demo in Salesforce org
 
+The recommended way to run this demo is to use a scratch org. \
+Clone this repo and run `sfdx force:org:create -f config/project-scratch-def.json -s -d 1 --json` to create a scratch org for 1 day. \
+Run `sfdx force:source:push` to push the source to the scratch org. \
+
+If your not a developer follow the steps below to create a scratch org. \
+
 Note: The deployment site requieres that this repo is public under deployment. Remember to make it private again after the demo.
 
 You can quickly spin up an org by clicking on the picture below. \
