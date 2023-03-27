@@ -49,6 +49,10 @@
                 <behavior>Edit</behavior>
                 <field>Conversion_Point__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Car__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
