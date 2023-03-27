@@ -1,0 +1,1094 @@
+<apex:page >
+<html lang="nb" class="">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="ie=edge" http-equiv="x-ua-compatible" />
+    <title>Selg bilen på nett - Få tilbud fra 1500+ bilforhandlere - Nettbil.no</title>
+    <link href="https://www.nettbil.no/assets/imgs/favicon.ico" rel="shortcut icon" />
+    <meta name="theme-color" content="#ff8752" />
+    <meta name="msapplication-navbutton-color" content="#ff8752" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#ff8752" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0" />
+    <meta name="description" content="Bilsalg på nett har aldri vært enklere. La over 1800 bilforhandlere konkurrere om å få kjøpe din bil. En første estimert verdivurdering tar kun minutter!" />
+    <meta name="keywords" content="Nettbil, cars, bmw, opel" />
+    <meta name="og:image" content="https://www.nettbil.no/assets/imgs/fogimage.png" />
+    <noscript>You will need to enable javascript to browse this app! Thanks for considering</noscript>
+    <link rel="preload" href="https://www.nettbil.no/assets/fonts/Moderat-Regular.woff2" as="font" crossorigin="" />
+    <link rel="preload" href="https://www.nettbil.no/assets/fonts/Moderat-Bold.woff2" as="font" crossorigin="" />
+    <link rel="preload" href="https://www.nettbil.no/assets/fonts/Moderat-Medium.woff2" as="font" crossorigin="" />
+    <script>
+      function browserUrlRewriteHash(key) {
+        if (window.location && window.location.href.indexOf('#/') > -1) {
+          window.localStorage.setItem(key, window.location.href);
+          window.location.href = window.location.href.replace('#/', '');
+        } else if (window.location && window.location.href.indexOf('/#') > -1) {
+          window.localStorage.setItem(key, window.location.href);
+          window.location.href = window.location.href.replace('/#', '');
+        } else if (window.location && window.location.href.indexOf('#') > -1) {
+          window.localStorage.setItem(key, window.location.href);
+          window.location.href = window.location.href.replace('#', '');
+        }
+      }
+      window.localStorage.removeItem('locale');
+      browserUrlRewriteHash('browser_location_hash_rewrite');
+    </script>
+    <script src="https://www.nettbil.no/env_config.js"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+        originalLocation: document.location.protocol + '//' + document.location.hostname + document.location.pathname + document.location.search,
+      });
+      window._env_ = window._env_ || {};
+      if (window._env_.GOOGLE_RECAPTCHA_SITE_KEY_INVISIBLE) {
+        var script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.src = 'https://www.google.com/recaptcha/enterprise.js?render=' + window._env_.GOOGLE_RECAPTCHA_SITE_KEY_INVISIBLE;
+        document.head.appendChild(script);
+      }
+      if (window._env_.GTM_ID) {
+        (function(a, s, y, n, c, h, i, d, e) {
+          s.className += ' ' + y;
+          h.start = 1 * new Date();
+          h.end = i = function() {
+            s.className = s.className.replace(RegExp(' ?' + y), '');
+          };
+          (a[n] = a[n] || []).hide = h;
+          setTimeout(function() {
+            i();
+            h.end = null;
+          }, c);
+          h.timeout = c;
+        })(window, document.documentElement, 'async-hide', 'dataLayer', 4000, {
+          [window._env_.GTM_ID]: true
+        });
+        (function(w, d, s, l, i) {
+          w[l] = w[l] || [];
+          w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+          });
+          var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+          j.async = true;
+          j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+          f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', window._env_.GTM_ID);
+      }
+    </script>
+    <!-- <script defer="defer" src="https://www.nettbil.no/runtime.0b9ff19963b218db7f5f.bundle.js"></script>
+    <script defer="defer" src="https://www.nettbil.no/7781.e4af1abefde84afc1689.bundle.js"></script>
+    <script defer="defer" src="https://www.nettbil.no/7248.591a66cb672009a18067.bundle.js"></script>
+    <script defer="defer" src="https://www.nettbil.no/8671.43be1b062c87b4c52b13.bundle.js"></script>
+    <script defer="defer" src="https://www.nettbil.no/4704.98e9f83962604b87696a.bundle.js"></script>
+    <script defer="defer" src="https://www.nettbil.no/6554.bc7ef69ebc4736b4762b.bundle.js"></script>
+    <script defer="defer" src="https://www.nettbil.no/969.9bcab8acd38db61c5b11.bundle.js"></script>
+    <script defer="defer" src="https://www.nettbil.no/4853.f9de0feb393a802641ca.bundle.js"></script>
+    <script defer="defer" src="https://www.nettbil.no/7201.32a22c4ec49bc0be3c62.bundle.js"></script>
+    <script defer="defer" src="https://www.nettbil.no/8207.c6dd1d8486b91f159427.bundle.js"></script>
+    <script defer="defer" src="https://www.nettbil.no/728.caddd71b9653f3950efa.bundle.js"></script>
+    <script defer="defer" src="https://www.nettbil.no/5457.067c147bc631c4048746.bundle.js"></script>
+    <script defer="defer" src="https://www.nettbil.no/5761.c34426b913aec64dff33.bundle.js"></script>
+    <script defer="defer" src="https://www.nettbil.no/3279.be1b498b6ec07b215d4b.bundle.js"></script>
+    <script defer="defer" src="https://www.nettbil.no/4511.c32fabc057c4d9a0f33b.bundle.js"></script>
+    <script defer="defer" src="https://www.nettbil.no/5910.09e25c4ca1c71d7067e8.bundle.js"></script>
+    <script defer="defer" src="https://www.nettbil.no/8132.c9f2b3b268c58e66fdc7.bundle.js"></script>
+    <script defer="defer" src="https://www.nettbil.no/2132.e0c37fc489c87b757df0.bundle.js"></script>
+    <script defer="defer" src="https://www.nettbil.no/6213.c905b1488f6a8f3b9790.bundle.js"></script>
+    <script defer="defer" src="https://www.nettbil.no/main.71b2a4dadecee96c5e17.bundle.js"></script> -->
+    <link href="https://www.nettbil.no/styles.6368.76d12fd219f2f56d402b.css" rel="stylesheet" />
+    <link href="https://www.nettbil.no/styles.179.88316f1babf869f46f5f.css" rel="stylesheet" />
+    <!-- <script async="" src="https://script.hotjar.com/modules.ee89e1552e8d595bfc26.js" charset="utf-8"></script>
+    <script async="" src="https://static.hotjar.com/c/hotjar-942820.js?sv=6"></script>
+    <script async="" src="https://static.hotjar.com/c/hotjar-942820.js?sv=6"></script> -->
+  </head>
+  <body>
+    <div id="root">
+      <div class="wrapper  gdpr-active mac-os">
+        <div class="Toastify"></div>
+        <header class="c-header">
+          <div class="container">
+            <nav class="c-navbar slide-from-side" role="navigation" aria-label="main navigation">
+              <div class="c-navbar__brand">
+                <a role="button" class="c-navbar__burger" aria-label="menu" aria-expanded="false">
+                  <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="18" height="2" rx="1" fill="#044046"></rect>
+                    <rect y="5" width="18" height="2" rx="1" fill="#044046"></rect>
+                    <rect y="10" width="18" height="2" rx="1" fill="#044046"></rect>
+                  </svg>
+                </a>
+                <a class="c-navbar__item c-navbar__logo" title="Home" href="https://www.nettbil.no/">
+                  <svg width="145" height="22" viewBox="0 0 145 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M74.9749 1.31641V20.9321H71.0804L61.9933 7.81888H61.7623V20.9321H58.043V1.31641H61.9375L71.0167 14.5148H71.2477V1.31641H74.9749Z" fill="#044046"></path>
+                    <path d="M91.859 16.5105C91.2855 19.398 88.8007 21.217 85.1371 21.217C80.8444 21.217 77.7305 18.3839 77.7305 14.0721C77.7305 9.45069 81.0197 6.64844 84.9938 6.64844C88.5379 6.64844 91.8271 8.83141 91.8271 13.8476C91.8271 14.1804 91.7953 14.4901 91.7713 14.8849H81.394C81.5373 16.9052 82.8913 18.3607 85.1452 18.3607C86.7618 18.3607 87.9167 17.7181 88.3149 16.5105H91.859ZM81.4179 12.4697H88.3069C88.2193 10.7357 86.8972 9.49713 84.9938 9.49713C83.0108 9.49713 81.6808 10.7899 81.4179 12.4697Z" fill="#044046"></path>
+                    <path d="M109.619 9.75508V16.6523C109.619 17.4342 109.818 18.3864 111.555 18.3864C111.985 18.3864 112.534 18.3012 112.964 18.1928V20.9099C112.327 21.0492 111.467 21.2195 110.424 21.2195C106.386 21.2195 105.924 18.6727 105.924 17.1246V9.75508H99.8712V16.6523C99.8712 17.4342 100.07 18.3864 101.806 18.3864C102.237 18.3864 102.786 18.3012 103.216 18.1928V20.9099C102.579 21.0492 101.719 21.2195 100.676 21.2195C96.6377 21.2195 96.1758 18.6727 96.1758 17.1246V9.75508H93.1016V6.92187H94.0812C95.8413 6.92187 96.5342 6.30259 96.5342 4.79308V3.11328H99.8792V6.92187H103.829C105.589 6.92187 106.282 6.30259 106.282 4.79308V3.11328H109.627V6.92187H113.402V9.75508H109.619Z" fill="#044046"></path>
+                    <path d="M130.263 13.9047C130.263 18.3636 127.347 21.22 123.484 21.22C121.239 21.22 119.877 20.1827 119.193 19.2847H118.93L118.611 20.9413H115.609V1.04688H119.296V8.24603C120.076 7.40226 121.518 6.65138 123.476 6.65138C127.268 6.64363 130.263 9.33751 130.263 13.9047ZM126.575 13.9047C126.575 11.4354 125.101 9.75553 122.912 9.75553C120.721 9.75553 119.304 11.4354 119.304 13.9047C119.304 16.4283 120.713 18.1081 122.912 18.1081C125.109 18.1081 126.575 16.4283 126.575 13.9047Z" fill="#044046"></path>
+                    <path d="M132.517 2.97203C132.517 1.74121 133.584 0.789062 134.794 0.789062C136.004 0.789062 137.016 1.74121 137.016 2.97203C137.016 4.1177 136.004 5.13178 134.794 5.13178C133.584 5.13178 132.517 4.1177 132.517 2.97203ZM132.946 6.91995H136.634V20.9313H132.946V6.91995Z" fill="#044046"></path>
+                    <path d="M139.836 1.03906H143.523V20.9334H139.836V1.03906Z" fill="#044046"></path>
+                    <path d="M3.1058 19.2291C0.382051 16.5816 0.382051 12.2853 3.1058 9.63791C5.82957 6.99049 10.2497 6.99049 12.9734 9.63791C15.6972 12.2853 15.6972 16.5816 12.9734 19.2291C10.2497 21.8765 5.83753 21.8765 3.1058 19.2291Z" fill="#044046"></path>
+                    <path d="M31.1639 19.2291C28.4402 16.5816 28.4402 12.2853 31.1639 9.63791C33.8877 6.99049 38.3077 6.99049 41.0315 9.63791C43.7552 12.2853 43.7552 16.5816 41.0315 19.2291C38.3077 21.8765 33.8877 21.8765 31.1639 19.2291Z" fill="#044046"></path>
+                    <path d="M8.02783 14.4365C8.02783 6.91222 14.3276 0.789062 22.0687 0.789062C29.8099 0.789062 36.1017 6.91222 36.1017 14.4365" fill="#FF8752"></path>
+                  </svg>
+                </a>
+              </div>
+              <div class="c-navbar__menu has-centered-nav ">
+                <div class="c-navbar__close">
+                  <svg xmlns:x="http://ns.adobe.com/Extensibility/1.0/" xmlns:i="http://ns.adobe.com/AdobeIllustrator/10.0/" xmlns:graph="http://ns.adobe.com/Graphs/1.0/" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" xml:space="preserve">
+                    <switch>
+                      <foreignObject requiredExtensions="http://ns.adobe.com/AdobeIllustrator/10.0/" x="0" y="0" width="1" height="1"></foreignObject>
+                      <g i:extraneous="self">
+                        <path d="M60.5,50l34.8-34.8c2.9-2.9,2.9-7.6,0-10.5c-2.9-2.9-7.6-2.9-10.5,0L50,39.5L15.2,4.7c-2.9-2.9-7.6-2.9-10.5,0    c-2.9,2.9-2.9,7.6,0,10.5L39.5,50L4.7,84.8c-2.9,2.9-2.9,7.6,0,10.5c1.4,1.4,3.3,2.2,5.2,2.2s3.8-0.7,5.2-2.2L50,60.5l34.8,34.8    c1.4,1.4,3.3,2.2,5.2,2.2c1.9,0,3.8-0.7,5.2-2.2c2.9-2.9,2.9-7.6,0-10.5L60.5,50z"></path>
+                      </g>
+                    </switch>
+                  </svg>
+                </div>
+                <div class="c-navbar__start c-navbar__client-user">
+                  <div class="u-hidden@from-desktop">
+                    <a href="tel:955 14 555" class="u-color-black c-navbar__item">
+                      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" class="u-margin-right-small">
+                        <path d="M16.7747 11.9706C15.8604 11.2358 15.0216 10.8785 14.2105 10.8785C13.0372 10.8785 12.1924 11.6249 11.4275 12.3896C11.3396 12.4776 11.2331 12.5186 11.0924 12.5186C10.4479 12.5187 9.31403 11.7115 7.72234 10.1196C5.84979 8.24696 5.1418 7.0559 5.61787 6.57965C6.90841 5.28954 7.3113 3.99623 5.33539 1.53887C4.62803 0.658476 3.93596 0.230591 3.21964 0.230591C2.25361 0.230591 1.51925 1.00279 0.871341 1.68415C0.759327 1.80193 0.653514 1.91319 0.549769 2.01693C-0.182523 2.74916 -0.182147 4.34631 0.550834 6.28952C1.35505 8.42162 2.94292 10.741 5.02202 12.8204C6.62988 14.4281 8.37933 15.7274 10.0813 16.5998C11.5673 17.3615 13.0086 17.7696 14.1399 17.7696C14.14 17.7696 14.1401 17.7696 14.1403 17.7696C14.8482 17.7696 15.4233 17.6151 15.803 17.3011C16.5745 16.6633 18.0104 15.4819 18.0008 14.0785C17.9955 13.3259 17.5831 12.6205 16.7747 11.9706Z" fill="#FF8752"></path>
+                      </svg>955 14 555 </a>
+                    <div class="c-divider  c-divider--horizontal"></div>
+                  </div>
+                </div>
+                <div class="c-navbar__center c-navbar__client-user">
+                  <a class="c-navbar__item " href="https://www.nettbil.no/">Selg bilen</a>
+                  <a class="c-navbar__item " data-cy="for-companies" href="https://www.nettbil.no/bedrift">Bedrift</a>
+                  <a class="c-navbar__item " data-cy="for-dealers" href="https://www.nettbil.no/dealer">Forhandler</a>
+                </div>
+                <div class="c-navbar__end c-navbar__client-user ">
+                  <div class="u-hidden@until-desktop">
+                    <a href="tel:955 14 555" class="u-color-black c-navbar__item">
+                      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" class="u-margin-right-small">
+                        <path d="M16.7747 11.9706C15.8604 11.2358 15.0216 10.8785 14.2105 10.8785C13.0372 10.8785 12.1924 11.6249 11.4275 12.3896C11.3396 12.4776 11.2331 12.5186 11.0924 12.5186C10.4479 12.5187 9.31403 11.7115 7.72234 10.1196C5.84979 8.24696 5.1418 7.0559 5.61787 6.57965C6.90841 5.28954 7.3113 3.99623 5.33539 1.53887C4.62803 0.658476 3.93596 0.230591 3.21964 0.230591C2.25361 0.230591 1.51925 1.00279 0.871341 1.68415C0.759327 1.80193 0.653514 1.91319 0.549769 2.01693C-0.182523 2.74916 -0.182147 4.34631 0.550834 6.28952C1.35505 8.42162 2.94292 10.741 5.02202 12.8204C6.62988 14.4281 8.37933 15.7274 10.0813 16.5998C11.5673 17.3615 13.0086 17.7696 14.1399 17.7696C14.14 17.7696 14.1401 17.7696 14.1403 17.7696C14.8482 17.7696 15.4233 17.6151 15.803 17.3011C16.5745 16.6633 18.0104 15.4819 18.0008 14.0785C17.9955 13.3259 17.5831 12.6205 16.7747 11.9706Z" fill="#FF8752"></path>
+                      </svg>955 14 555 </a>
+                  </div>
+                  <a role="button" class="c-navbar__item" data-cy="login">Logg inn</a>
+                </div>
+              </div>
+            </nav>
+          </div>
+          <div class="loading-bar"></div>
+        </header>
+        <section class="section">
+          <div class="container is-xxsmall">
+            <h1 class="u-h3 u-text-center u-margin-bottom-large">Vennligst legg igjen info under, så tar vi kontakt for å få mer info om bilen, slik at vi kan gi deg en verdivurdering og mer info om Nettbil.</h1>
+          </div>
+          <div class="container is-xxxxsmall">
+            <div class="">
+              <form action="https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+                
+                <!-- Web to lead form -->
+                <input type="hidden" name="oid" value="00D3N0000004KAy" />
+                <input type="hidden" name="retURL" value="https://www.nettbil.no/" />
+                <input type="hidden" name="lead_source" value="Web" />
+                <input type="hidden" name="00N3N00000PnSni" value="https://dream-customer-3276-dev-ed--c.scratch.vf.force.com/apex/ContactForm" />
+                <!-- Web to lead form -->
+                <!-- web to lead debugging -->
+                <input type="hidden" name="debug" value="1" />
+                <input type="hidden" name="debugEmail" value="erlend.hansen@stretch.no" />  
+                <!-- web to lead debugging -->
+
+                <div class="u-margin-bottom has-animated-label field ">
+                  <label for="mobile" class="label  animated-label u-color-primary">Telefonnummer</label>
+                  <div class="u-background-color-bwg-tint-4 control o-level o-level--margin-tiny ">
+                    <div class="control u-background-color-bwg-tint-4">
+                      <select class="input o-level__item phonenumber-calling-code  " data-cy="phone-number-country-code" name="telephoneNumber" tabindex="0">
+                        <option value="+47">+47</option>
+                        <option value="+46">+46</option>
+                        <option value="+358">+358</option>
+                        <option value="+33">+33</option>
+                        <option value="+49">+49</option>
+                        <option value="+44">+44</option>
+                        <option value="+1">+1</option>
+                      </select>
+                    </div>
+                    <input class="is-input phonenumber o-level__item " id="mobile" type="tel" name="mobile" tabindex="0" data-cy="phone-number" placeholder="Telefonnummer" inputmode="numeric" autocomplete="off" value="" />
+                  </div>
+                  <div>
+                    <p class=" help is-danger "></p>
+                  </div>
+                </div>
+                <div class="u-margin-bottom has-animated-label field ">
+                  <label for="email" class="label  animated-label u-color-primary">E-post</label>
+                  <div class=" control ">
+                    <input type="email" name="email" id="email" data-cy="email" maxlength="80" autocomplete="off" tabindex="0" class="input c-input  " value="" placeholder="E-post" />
+                  </div>
+                  <div>
+                    <p class=" help is-danger "></p>
+                  </div>
+                </div>
+                <div class="u-margin-bottom has-animated-label field ">
+                  <label for="first_name" class="label  animated-label u-color-primary">Fornavn</label>
+                  <div class=" control ">
+                    <input type="text" name="first_name" id="first_name" maxlength="40"  data-cy="first-name" autocomplete="off" tabindex="0" placeholder="Fornavn" class="input c-input  " value="" />
+                    <div data-lastpass-icon-root="true" style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;"></div>
+                  </div>
+                  <div>
+                    <p class=" help is-danger "></p>
+                  </div>
+                </div>
+                <!-- Erlend Custom add start -->
+                <div class="c-estimate-form__number-plate u-margin-bottom field "><label for="00N3N00000PnScQ" class="label  u-color-primary"></label><div class=" control "><input type="text" name="00N3N00000PnScQ" id="00N3N00000PnScQ" data-cy="number-plate" autocomplete="off" tabindex="0" class="input c-input  " value="" placeholder="Bilens regnr." /></div><div><p class=" help is-danger "></p></div></div>
+                <div class="u-margin-bottom field "><label for="00N3N00000PnScL" class="label  u-color-primary"></label><div class=" control "><input type="number" name="00N3N00000PnScL" id="00N3N00000PnScL" data-cy="mileage" autocomplete="off" tabindex="0" class="input c-input c-input--hide-spinner  " value="" placeholder="Kilometerstand" /></div><div><p class=" help is-danger "></p></div></div>
+                <!-- Erlend Custom add end -->
+                <div class="c-input field">
+                  <input class="has-background-color is-info c-checkbox " id="termsAccepted" type="checkbox" name="termsAccepted" data-cy="terms-accepted" tabindex="0" />
+                  <label id="labelFortermsAccepted" for="termsAccepted" data-cy="terms-accepted-label" class="c-checkbox__label u-h6   ">
+                    <span>Jeg godtar <a href="https://www.nettbil.no/seller-terms" target="_blank">vilkårene</a> og Nettbil kan ta kontakt med meg angående salg av min bil </span>
+                  </label>
+                  <p class=" help is-danger "></p>
+                </div>
+                <div class="o-level o-level--equal o-level--margin-tiny ">
+                  <button disabled="" name="submit" type="submit" data-cy="free-valuation-extra-submit-button" class="o-level__item c-btn c-btn--medium c-btn--color-primary  " style="background: #ff8752;">Send registering</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+        <div class="nb-cookie-bar" style="">
+          <div class="container">
+            <div class="icon-wrapper">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" version="1.1" viewBox="0 0 100 103" x="0px" y="0px">
+                <path d="m50.812 4.1035a1.2501 1.2501 0 0 0-0.31055 0.03125l-43.625 10a1.2501 1.2501 0 0 0-0.9707 1.2188v33.291c0 17.572 11.249 30.202 22.33 38.35s22.154 11.961 22.154 11.961a1.2501 1.2501 0 0 0 0.81836-0.001953s11.063-3.842 22.135-12.004c11.071-8.1619 22.312-20.791 22.312-38.305v-33.291a1.2501 1.2501 0 0 0-0.9707-1.2188l-43.625-10a1.2501 1.2501 0 0 0-0.24805-0.03125zm-0.03125 2.5312 42.375 9.7129v32.297c0 16.444-10.562 28.381-21.295 36.293-10.405 7.6709-20.439 11.259-21.064 11.48-0.62326-0.21906-10.666-3.7802-21.08-11.438-10.74-7.8971-21.311-19.831-21.311-36.336v-32.297l42.375-9.7129zm0.052734 16.387c-6.2593 0-11.59 4.2919-12.197 10.732-0.06016 0.6383-0.12891 2.5152-0.12891 3.0957 0 2.7431 0.80489 5.2996 2.1855 7.4043 1.0395 1.5846 2.4165 3.3605 4.0918 4.7891 1.6753 1.4286 3.6941 2.5469 5.9785 2.5469 2.2548 0 4.2526-1.0827 5.916-2.4727 1.6634-1.3899 3.0348-3.1207 4.0781-4.6758 1.3715-2.0442 2.138-4.5787 2.207-7.2363a1.2501 1.2501 0 0 0 0.054687-0.35547c0-0.14202 0.010942-0.82456 0.019531-1.4785 0.008601-0.65396 0.034745-1.1452-0.009765-1.6172-0.6069-6.4405-5.9361-10.732-12.195-10.732zm0 2.5c5.1585 0 9.2155 3.2505 9.707 8.4668-9e-3 -0.09497 0.0084 0.707 0 1.3496-8e-3 0.60525-0.018152 1.1478-0.019532 1.4238-2.2e-5 0.0045-0.001853 0.019057-0.001953 0.023437a1.2501 1.2501 0 0 0-0.001953 0.064453c0 2.295-0.69139 4.4912-1.8359 6.1973-0.95298 1.4205-2.2127 2.9886-3.6055 4.1523s-2.8746 1.8906-4.3125 1.8906c-1.4503 0-2.9496-0.75036-4.3555-1.9492-1.4059-1.1989-2.6748-2.8094-3.625-4.2578-1.1163-1.7018-1.7754-3.7786-1.7754-6.0332 0-0.20687 0.10629-2.7457 0.11719-2.8613 0.49151-5.2163 4.5504-8.4668 9.709-8.4668zm7.4805 23.449-1.5879 1.6055c-1.5604 1.579-4.1917 2.9277-5.9629 2.9277-1.8263 0-4.3028-1.282-5.8848-2.918l-1.4941-1.5449-0.60352 2.0625c-0.04589 0.1567-0.031672 0.12512-0.039062 0.16016-0.0074 0.03503-0.014211 0.07456-0.025391 0.125-0.02236 0.10087-0.05494 0.24062-0.10156 0.41211-0.09325 0.34298-0.24264 0.81463-0.4707 1.3438-0.45613 1.0582-1.2243 2.3282-2.459 3.2988-1.0574 0.83124-3.9251 1.6776-6.8105 2.4141s-5.7825 1.3426-7.6172 2.8516c-3.1378 2.5807-3.6406 6.0781-3.6406 6.0781l-0.20313 1.4258h58.734l-0.35156-1.5293s-0.7897-3.4823-3.9941-5.9941c-1.862-1.4595-4.7677-2.0627-7.6484-2.7988s-5.7238-1.6015-6.7363-2.4316c-1.1283-0.92504-1.7453-2.0917-2.0957-3.1055-0.17521-0.50687-0.28033-0.96947-0.34766-1.332-0.06733-0.36256-0.05448-0.47952-0.14258-0.85352l-0.51758-2.1973zm-13.652 4.5273c1.8034 1.3962 3.8847 2.5059 6.1016 2.5059 2.1707 0 4.2407-1.0853 6.041-2.4277 0.058439 0.21028 0.07663 0.3634 0.15625 0.59375 0.45415 1.3138 1.2936 2.9277 2.873 4.2227 1.8748 1.5371 4.8122 2.1817 7.7012 2.9199 2.889 0.73826 5.7421 1.574 6.7266 2.3457 1.2689 0.99464 2.0336 2.1445 2.4941 3.0547h-52.215c0.3754-0.89677 1.0375-2.032 2.3047-3.0742 0.93447-0.76856 3.761-1.6229 6.6465-2.3594 2.8854-0.73648 5.8358-1.3756 7.7383-2.8711 1.6662-1.3098 2.6396-2.9524 3.209-4.2734 0.10791-0.25036 0.14167-0.41239 0.22266-0.63672z" color="#000000" color-rendering="auto" dominant-baseline="auto" image-rendering="auto" shape-rendering="auto" solid-color="#000000" style="font-feature-settings: normal; font-variant-alternates: normal; font-variant-caps: normal; font-variant-ligatures: normal; font-variant-numeric: normal; isolation: auto; mix-blend-mode: normal; text-decoration-color: rgb(0, 0, 0); text-decoration-line: none; text-decoration-style: solid; text-indent: 0px; text-orientation: mixed; text-transform: none; white-space: normal;"></path>
+              </svg>
+            </div>
+            <div class="content-wrapper">
+              <p>Denne siden benytter seg av informasjonskapsler (cookies). Du kan fortsette å bruke siden som vanlig hvis du godtar dette. Les mer om bruk av informasjonskapsler i vår <a class="js-btn-moreInfo" href="https://www.nettbil.no/personvernerklaering" title="Les mer om informasjonskapsler">personvernerklæring.</a>
+              </p>
+            </div>
+            <div class="submit-wrapper">
+              <button type="button" data-cy="undefined-accept" class="c-btn c-btn--color-primary ">OK</button>
+            </div>
+          </div>
+        </div>
+        <footer class="c-footer section u-background-color-white" data-cy="main-footer" style="">
+          <div class="container is-small">
+            <div class="columns">
+              <div class="column">
+                <div class="c-footer__logo-wrapper">
+                  <svg width="145" height="22" viewBox="0 0 145 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M74.9749 1.31641V20.9321H71.0804L61.9933 7.81888H61.7623V20.9321H58.043V1.31641H61.9375L71.0167 14.5148H71.2477V1.31641H74.9749Z" fill="#044046"></path>
+                    <path d="M91.859 16.5105C91.2855 19.398 88.8007 21.217 85.1371 21.217C80.8444 21.217 77.7305 18.3839 77.7305 14.0721C77.7305 9.45069 81.0197 6.64844 84.9938 6.64844C88.5379 6.64844 91.8271 8.83141 91.8271 13.8476C91.8271 14.1804 91.7953 14.4901 91.7713 14.8849H81.394C81.5373 16.9052 82.8913 18.3607 85.1452 18.3607C86.7618 18.3607 87.9167 17.7181 88.3149 16.5105H91.859ZM81.4179 12.4697H88.3069C88.2193 10.7357 86.8972 9.49713 84.9938 9.49713C83.0108 9.49713 81.6808 10.7899 81.4179 12.4697Z" fill="#044046"></path>
+                    <path d="M109.619 9.75508V16.6523C109.619 17.4342 109.818 18.3864 111.555 18.3864C111.985 18.3864 112.534 18.3012 112.964 18.1928V20.9099C112.327 21.0492 111.467 21.2195 110.424 21.2195C106.386 21.2195 105.924 18.6727 105.924 17.1246V9.75508H99.8712V16.6523C99.8712 17.4342 100.07 18.3864 101.806 18.3864C102.237 18.3864 102.786 18.3012 103.216 18.1928V20.9099C102.579 21.0492 101.719 21.2195 100.676 21.2195C96.6377 21.2195 96.1758 18.6727 96.1758 17.1246V9.75508H93.1016V6.92187H94.0812C95.8413 6.92187 96.5342 6.30259 96.5342 4.79308V3.11328H99.8792V6.92187H103.829C105.589 6.92187 106.282 6.30259 106.282 4.79308V3.11328H109.627V6.92187H113.402V9.75508H109.619Z" fill="#044046"></path>
+                    <path d="M130.263 13.9047C130.263 18.3636 127.347 21.22 123.484 21.22C121.239 21.22 119.877 20.1827 119.193 19.2847H118.93L118.611 20.9413H115.609V1.04688H119.296V8.24603C120.076 7.40226 121.518 6.65138 123.476 6.65138C127.268 6.64363 130.263 9.33751 130.263 13.9047ZM126.575 13.9047C126.575 11.4354 125.101 9.75553 122.912 9.75553C120.721 9.75553 119.304 11.4354 119.304 13.9047C119.304 16.4283 120.713 18.1081 122.912 18.1081C125.109 18.1081 126.575 16.4283 126.575 13.9047Z" fill="#044046"></path>
+                    <path d="M132.517 2.97203C132.517 1.74121 133.584 0.789062 134.794 0.789062C136.004 0.789062 137.016 1.74121 137.016 2.97203C137.016 4.1177 136.004 5.13178 134.794 5.13178C133.584 5.13178 132.517 4.1177 132.517 2.97203ZM132.946 6.91995H136.634V20.9313H132.946V6.91995Z" fill="#044046"></path>
+                    <path d="M139.836 1.03906H143.523V20.9334H139.836V1.03906Z" fill="#044046"></path>
+                    <path d="M3.1058 19.2291C0.382051 16.5816 0.382051 12.2853 3.1058 9.63791C5.82957 6.99049 10.2497 6.99049 12.9734 9.63791C15.6972 12.2853 15.6972 16.5816 12.9734 19.2291C10.2497 21.8765 5.83753 21.8765 3.1058 19.2291Z" fill="#044046"></path>
+                    <path d="M31.1639 19.2291C28.4402 16.5816 28.4402 12.2853 31.1639 9.63791C33.8877 6.99049 38.3077 6.99049 41.0315 9.63791C43.7552 12.2853 43.7552 16.5816 41.0315 19.2291C38.3077 21.8765 33.8877 21.8765 31.1639 19.2291Z" fill="#044046"></path>
+                    <path d="M8.02783 14.4365C8.02783 6.91222 14.3276 0.789062 22.0687 0.789062C29.8099 0.789062 36.1017 6.91222 36.1017 14.4365" fill="#FF8752"></path>
+                  </svg>
+                </div>
+                <ul>
+                  <li>Nettbil AS © 2023</li>
+                </ul>
+              </div>
+              <div class="column">
+                <h4 class="u-h4 u-text-bold u-margin-bottom">Snarveier</h4>
+                <nav class="c-footer__footer-nav">
+                  <ul>
+                    <li>
+                      <a href="https://www.nettbil.no/ofte-stilte-sporsmal">Spørsmål og svar</a>
+                    </li>
+                    <li>
+                      <a href="https://www.nettbil.no/om-oss">Om Nettbil</a>
+                    </li>
+                    <li>
+                      <a data-cy="valuate-car" href="https://www.nettbil.no/verdivurdering">Verdivurdering</a>
+                    </li>
+                    <li>
+                      <a href="https://www.nettbil.no/karriere-hos-oss">Karriere hos oss</a>
+                    </li>
+                    <li class="u-margin-bottom">
+                      <a href="https://www.nettbil.no/dealer">For forhandler</a>
+                    </li>
+                    <li>
+                      <a href="https://www.nettbil.no/seller-terms">Vilkår</a>
+                    </li>
+                    <li>
+                      <a href="https://www.nettbil.no/personvernerklaering">Personvernerklæring</a>
+                    </li>
+                    <li>
+                      <a href="https://www.nettbil.no/cookies">Cookies</a>
+                    </li>
+                    <li>
+                      <a href="https://www.nettbil.no/transparency-act">Åpenhetsloven</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="column">
+                <h4 class="u-h4 u-text-bold u-margin-bottom">Ta kontakt</h4>
+                <nav class="c-footer__footer-nav">
+                  <ul>
+                    <li>
+                      <a href="https://www.nettbil.no/kontakt-oss">Kontakt oss</a>
+                    </li>
+                    <li>
+                      <button type="button">Chat</button>
+                    </li>
+                    <li class="u-margin-bottom">
+                      <a href="https://www.facebook.com/nettbil.no/" target="_blank" rel="noopener noreferrer">Facebook</a>
+                    </li>
+                    <li>
+                      <a class="u-color-primary" href="mailto:kontakt@nettbil.no">kontakt@nettbil.no</a>
+                    </li>
+                    <li>
+                      <a href="tel:21624949">21 62 49 49</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+
+
+
+
+
+    <!-- <script type="text/javascript" id="">
+      ! function(t, H) {
+        function I(a) {
+          if (null == a) var b = void 0 === a ? Za : $a;
+          else if (qa && qa in Object(a)) {
+            var c = ab.call(a, J),
+              d = a[J];
+            try {
+              a[J] = void 0, b = !0
+            } catch (k) {}
+            var g = bb.call(a);
+            b = (b && (c ? a[J] = d : delete a[J]), g)
+          } else b = cb.call(a);
+          return b
+        }
+
+        function E(a) {
+          return null != a && "object" == typeof a
+        }
+
+        function y(a) {
+          var b = typeof a;
+          return null != a && ("object" == b || "function" == b)
+        }
+
+        function K(a) {
+          if (!y(a)) return !1;
+          a = I(a);
+          return a == db || a == eb || a == fb || a == gb
+        }
+
+        function hb(a, b) {
+          for (var c = -1, d = null == a ? 0 : a.length; ++c < d && !1 !== b(a[c], c, a););
+          return a
+        }
+
+        function ra(a) {
+          return E(a) && I(a) == ib
+        }
+
+        function sa(a, b) {
+          var c = typeof a;
+          return !!(b = null == b ? jb : b) && ("number" == c || "symbol" != c && kb.test(a)) && -1 < a && 0 == a % 1 && a < b
+        }
+
+        function ta(a) {
+          return "number" == typeof a && -1 < a && 0 == a % 1 && a <= lb
+        }
+
+        function ua(a, b) {
+          var c = L(a),
+            d = !c && aa(a),
+            g = !c && !d && va(a),
+            k = !c && !d && !g && wa(a);
+          if (c = c || d || g || k) {
+            d = a.length;
+            for (var e = String, f = -1, l = Array(d); ++f < d;) l[f] = e(f);
+            d = l
+          } else d = [];
+          e = d.length;
+          for (var h in a) !b && !mb.call(a, h) || c && ("length" == h || g && ("offset" == h || "parent" == h) || k && ("buffer" == h || "byteLength" == h || "byteOffset" == h) || sa(h, e)) || d.push(h);
+          return d
+        }
+
+        function ba(a) {
+          var b = a && a.constructor;
+          return a === ("function" == typeof b && b.prototype || nb)
+        }
+
+        function xa(a, b) {
+          return function(c) {
+            return a(b(c))
+          }
+        }
+
+        function M(a) {
+          return null != a && ta(a.length) && !K(a)
+        }
+
+        function ob(a) {
+          if (M(a)) var b = ua(a);
+          else if (ba(a)) {
+            var c = [];
+            for (b in Object(a)) pb.call(a, b) && "constructor" != b && c.push(b);
+            b = c
+          } else b = qb(a);
+          return b
+        }
+
+        function ca(a) {
+          return a
+        }
+
+        function da(a, b) {
+          var c;
+          return (L(a) ? hb : rb)(a, "function" == typeof(c = b) ? c : ca)
+        }
+
+        function Q(a, b) {
+          var c;
+          y(b) || (b = {});
+          ("string" == typeof(c = a) || !L(c) && E(c) && I(c) == sb) && (b.event = a);
+          b._mf = {
+            version: tb,
+            buildtime: "2020-03-18T08:46:18.376Z"
+          };
+          da(R.vars, function(d, g) {
+            K(d) ? b[g] = d() : b[g] = d
+          });
+          t.dataLayer = t.dataLayer || [];
+          t.dataLayer.push(b)
+        }
+
+        function S(a, b) {
+          return a === b || a != a && b != b
+        }
+
+        function T(a, b) {
+          for (var c = a.length; c--;)
+            if (S(a[c][0], b)) return c;
+          return -1
+        }
+
+        function x(a) {
+          var b = -1,
+            c = null == a ? 0 : a.length;
+          for (this.clear(); ++b < c;) {
+            var d = a[b];
+            this.set(d[0], d[1])
+          }
+        }
+
+        function ub(a) {
+          return !(!y(a) || ya && ya in a) && (K(a) ? vb : wb).test(function(b) {
+            if (null != b) {
+              try {
+                return xb.call(b)
+              } catch (c) {}
+              return b + ""
+            }
+            return ""
+          }(a))
+        }
+
+        function ea(a, b) {
+          a = null == a ? void 0 : a[b];
+          return ub(a) ? a : void 0
+        }
+
+        function B(a) {
+          var b = -1,
+            c = null == a ? 0 : a.length;
+          for (this.clear(); ++b < c;) {
+            var d = a[b];
+            this.set(d[0], d[1])
+          }
+        }
+
+        function U(a, b) {
+          var c, d;
+          a = a.__data__;
+          return ("string" == (d = typeof(c = b)) || "number" == d || "symbol" == d || "boolean" == d ? "__proto__" !== c : null === c) ? a["string" == typeof b ? "string" : "hash"] : a.map
+        }
+
+        function F(a) {
+          var b = -1,
+            c = null == a ? 0 : a.length;
+          for (this.clear(); ++b < c;) {
+            var d = a[b];
+            this.set(d[0], d[1])
+          }
+        }
+
+        function G(a) {
+          a = this.__data__ = new x(a);
+          this.size = a.size
+        }
+
+        function fa(a, b, c) {
+          "__proto__" == b && V ? V(a, b, {
+            configurable: !0,
+            enumerable: !0,
+            value: c,
+            writable: !0
+          }) : a[b] = c
+        }
+
+        function ha(a, b, c) {
+          (void 0 === c || S(a[b], c)) && (void 0 !== c || b in a) || fa(a, b, c)
+        }
+
+        function yb(a, b) {
+          var c, d;
+          b = b ? (c = a.buffer, d = new c.constructor(c.byteLength), (new za(d)).set(new za(c)), d) : a.buffer;
+          return new a.constructor(b, a.byteOffset, a.length)
+        }
+
+        function ia(a, b) {
+          if (("constructor" !== b || "function" != typeof a[b]) && "__proto__" != b) return a[b]
+        }
+
+        function Aa(a) {
+          if (M(a)) var b = ua(a, !0);
+          else if (y(a)) {
+            var c = ba(a),
+              d = [];
+            for (b in a)("constructor" != b || !c && zb.call(a, b)) && d.push(b);
+            b = d
+          } else {
+            b = a;
+            a = [];
+            if (null != b)
+              for (c in Object(b)) a.push(c);
+            b = a
+          }
+          return b
+        }
+
+        function Ab(a) {
+          var b = a;
+          a = Aa(a);
+          var c = void 0,
+            d = !c;
+          c || (c = {});
+          for (var g = -1, k = a.length; ++g < k;) {
+            var e = a[g],
+              f = void 0;
+            void 0 === f && (f = b[e]);
+            if (d) fa(c, e, f);
+            else {
+              var l = c,
+                h = l[e];
+              Bb.call(l, e) && S(h, f) && (void 0 !== f || e in l) || fa(l, e, f)
+            }
+          }
+          return b = c
+        }
+
+        function Cb(a, b, c, d, g, k, e) {
+          var f = ia(a, c),
+            l = ia(b, c),
+            h = e.get(l);
+          if (h) ha(a, c, h);
+          else {
+            var r;
+            b = k ? k(f, l, c + "", a, b, e) : void 0;
+            if (h = void 0 === b) {
+              var m = L(l),
+                u = !m && va(l),
+                w = !m && !u && wa(l);
+              b = l;
+              m || u || w ? L(f) ? b = f : E(r = f) && M(r) ? b = function(n, q) {
+                var C = -1,
+                  W = n.length;
+                for (q || (q = Array(W)); ++C < W;) q[C] = n[C];
+                return q
+              }(f) : u ? (h = !1, b = function(n, q) {
+                if (q) return n.slice();
+                q = n.length;
+                q = Ba ? Ba(q) : new n.constructor(q);
+                return n.copy(q), q
+              }(l, !0)) : w ? (h = !1, b = yb(l, !0)) : b = [] : function(n) {
+                if (!E(n) || I(n) != Db) return !1;
+                n = Ca(n);
+                if (null === n) return !0;
+                n = Eb.call(n, "constructor") && n.constructor;
+                return "function" == typeof n && n instanceof n && Da.call(n) == Fb
+              }(l) || aa(l) ? (b = f, aa(f) ? b = Ab(f) : y(f) && !K(f) || (b = function(n) {
+                return "function" != typeof n.constructor || ba(n) ? {} : Gb(Ca(n))
+              }(l))) : h = !1
+            }
+            h && (e.set(l, b), g(b, l, d, k, e), e["delete"](l));
+            ha(a, c, b)
+          }
+        }
+
+        function Ea(a, b, c, d, g) {
+          a !== b && Fa(b, function(k, e) {
+            if (g || (g = new G), y(k)) Cb(a, b, e, c, Ea, d, g);
+            else {
+              var f = d ? d(ia(a, e), k, e + "", a, b, g) : void 0;
+              void 0 === f && (f = k);
+              ha(a, e, f)
+            }
+          }, Aa)
+        }
+
+        function Hb(a, b) {
+          return Ib(function(c, d, g) {
+            return d = Ga(void 0 === d ? c.length - 1 : d, 0),
+              function() {
+                for (var k = arguments, e = -1, f = Ga(k.length - d, 0), l = Array(f); ++e < f;) l[e] = k[d + e];
+                e = -1;
+                for (f = Array(d + 1); ++e < d;) f[e] = k[e];
+                return f[d] = g(l),
+                  function(h, r, m) {
+                    switch (m.length) {
+                      case 0:
+                        return h.call(r);
+                      case 1:
+                        return h.call(r, m[0]);
+                      case 2:
+                        return h.call(r, m[0], m[1]);
+                      case 3:
+                        return h.call(r, m[0], m[1], m[2])
+                    }
+                    return h.apply(r, m)
+                  }(c, this, f)
+              }
+          }(a, b, ca), a + "")
+        }
+
+        function v(a, b) {
+          t.addEventListener ? t.addEventListener(a, b) : t.attachEvent && t.attachEvent("on" + a, b)
+        }
+        t = t && t.hasOwnProperty("default") ? t["default"] : t;
+        H = H && H.hasOwnProperty("default") ? H["default"] : H;
+        var Ha = "object" == typeof global && global && global.Object === Object && global,
+          Jb = "object" == typeof self && self && self.Object === Object && self,
+          D = Ha || Jb || Function("return this")(),
+          X = D.Symbol,
+          Ia = Object.prototype,
+          ab = Ia.hasOwnProperty,
+          bb = Ia.toString,
+          J = X ? X.toStringTag : void 0,
+          cb = Object.prototype.toString,
+          $a = "[object Null]",
+          Za = "[object Undefined]",
+          qa = X ? X.toStringTag : void 0,
+          L = Array.isArray,
+          sb = "[object String]",
+          fb = "[object AsyncFunction]",
+          db = "[object Function]",
+          eb = "[object GeneratorFunction]",
+          gb = "[object Proxy]",
+          tb = "0.1.32",
+          Kb, Fa = function(a, b, c) {
+            var d = -1,
+              g = Object(a);
+            c = c(a);
+            for (var k = c.length; k--;) {
+              var e = c[Kb ? k : ++d];
+              if (!1 === b(g[e], e, g)) break
+            }
+            return a
+          },
+          ib = "[object Arguments]",
+          Ja = Object.prototype,
+          Lb = Ja.hasOwnProperty,
+          Mb = Ja.propertyIsEnumerable,
+          aa = ra(function() {
+            return arguments
+          }()) ? ra : function(a) {
+            return E(a) && Lb.call(a, "callee") && !Mb.call(a, "callee")
+          },
+          Ka = "object" == typeof exports && exports && !exports.nodeType && exports,
+          La = Ka && "object" == typeof module && module && !module.nodeType && module,
+          Ma = La && La.exports === Ka ? D.Buffer : void 0,
+          va = (Ma ? Ma.isBuffer : void 0) || function() {
+            return !1
+          },
+          jb = 9007199254740991,
+          kb = /^(?:0|[1-9]\d*)$/,
+          lb = 9007199254740991,
+          p = {};
+        p["[object Float32Array]"] = p["[object Float64Array]"] = p["[object Int8Array]"] = p["[object Int16Array]"] = p["[object Int32Array]"] = p["[object Uint8Array]"] = p["[object Uint8ClampedArray]"] = p["[object Uint16Array]"] = p["[object Uint32Array]"] = !0;
+        p["[object Arguments]"] = p["[object Array]"] = p["[object ArrayBuffer]"] = p["[object Boolean]"] = p["[object DataView]"] = p["[object Date]"] = p["[object Error]"] = p["[object Function]"] = p["[object Map]"] = p["[object Number]"] = p["[object Object]"] = p["[object RegExp]"] = p["[object Set]"] = p["[object String]"] = p["[object WeakMap]"] = !1;
+        var Na, Oa = "object" == typeof exports && exports && !exports.nodeType && exports,
+          N = Oa && "object" == typeof module && module && !module.nodeType && module,
+          ja = N && N.exports === Oa && Ha.process,
+          Pa = function() {
+            try {
+              var a = N && N.require && N.require("util").types;
+              return a || ja && ja.binding && ja.binding("util")
+            } catch (b) {}
+          }(),
+          Qa = Pa && Pa.isTypedArray,
+          wa = Qa ? (Na = Qa, function(a) {
+            return Na(a)
+          }) : function(a) {
+            return E(a) && ta(a.length) && !!p[I(a)]
+          },
+          mb = Object.prototype.hasOwnProperty,
+          nb = Object.prototype,
+          qb = xa(Object.keys, Object),
+          pb = Object.prototype.hasOwnProperty,
+          rb = function(a, b) {
+            return function(c, d) {
+              if (null == c) return c;
+              if (!M(c)) return a(c, d);
+              for (var g = c.length, k = b ? g : -1, e = Object(c);
+                (b ? k-- : ++k < g) && !1 !== d(e[k], k, e););
+              return c
+            }
+          }(function(a, b) {
+            return a && Fa(a, b, ob)
+          }),
+          ka = function() {
+            this.registered = [];
+            this.vars = {};
+            this.a = "__mf_lock"
+          };
+        ka.prototype.register = function(a) {
+          K(a) && this.registered.push(a)
+        };
+        ka.prototype.init = function() {
+          var a = this;
+          if (void 0 === window[this.a]) return da(this.registered, function(b) {
+            da(b(), function(c, d) {
+              a.vars[d] = c
+            })
+          }), window[this.a] = !0, Q("Measurement Framework Loaded", {
+            mfDebug: this.registered.length + " tasks registered."
+          }), a.vars
+        };
+        var R = new ka,
+          Nb = Array.prototype.splice;
+        x.prototype.clear = function() {
+          this.__data__ = [];
+          this.size = 0
+        };
+        x.prototype["delete"] = function(a) {
+          var b = this.__data__;
+          a = T(b, a);
+          return !(0 > a || (a == b.length - 1 ? b.pop() : Nb.call(b, a, 1), --this.size, 0))
+        };
+        x.prototype.get = function(a) {
+          var b = this.__data__;
+          a = T(b, a);
+          return 0 > a ? void 0 : b[a][1]
+        };
+        x.prototype.has = function(a) {
+          return -1 < T(this.__data__, a)
+        };
+        x.prototype.set = function(a, b) {
+          var c = this.__data__,
+            d = T(c, a);
+          return 0 > d ? (++this.size, c.push([a, b])) : c[d][1] = b, this
+        };
+        var Ra, la = D["__core-js_shared__"],
+          ya = (Ra = /[^.]+$/.exec(la && la.keys && la.keys.IE_PROTO || "")) ? "Symbol(src)_1." + Ra : "",
+          xb = Function.prototype.toString,
+          wb = /^\[object .+?Constructor\]$/,
+          Ob = Function.prototype,
+          Pb = Object.prototype,
+          Qb = Ob.toString,
+          Rb = Pb.hasOwnProperty,
+          vb = RegExp("^" + Qb.call(Rb).replace(/[\\^$.*+?()[\]{}|]/g, "\\$\x26").replace(/hasOwnProperty|(function).*?(?=\\\()| for .+?(?=\\\])/g, "$1.*?") + "$"),
+          Sa = ea(D, "Map"),
+          O = ea(Object, "create"),
+          Sb = "__lodash_hash_undefined__",
+          Tb = Object.prototype.hasOwnProperty,
+          Ub = Object.prototype.hasOwnProperty,
+          Vb = "__lodash_hash_undefined__";
+        B.prototype.clear = function() {
+          this.__data__ = O ? O(null) : {};
+          this.size = 0
+        };
+        B.prototype["delete"] = function(a) {
+          a = this.has(a) && delete this.__data__[a];
+          return this.size -= a ? 1 : 0, a
+        };
+        B.prototype.get = function(a) {
+          var b = this.__data__;
+          return O ? (a = b[a], a === Sb ? void 0 : a) : Tb.call(b, a) ? b[a] : void 0
+        };
+        B.prototype.has = function(a) {
+          var b = this.__data__;
+          return O ? void 0 !== b[a] : Ub.call(b, a)
+        };
+        B.prototype.set = function(a, b) {
+          var c = this.__data__;
+          return this.size += this.has(a) ? 0 : 1, c[a] = O && void 0 === b ? Vb : b, this
+        };
+        F.prototype.clear = function() {
+          this.size = 0;
+          this.__data__ = {
+            hash: new B,
+            map: new(Sa || x),
+            string: new B
+          }
+        };
+        F.prototype["delete"] = function(a) {
+          a = U(this, a)["delete"](a);
+          return this.size -= a ? 1 : 0, a
+        };
+        F.prototype.get = function(a) {
+          return U(this, a).get(a)
+        };
+        F.prototype.has = function(a) {
+          return U(this, a).has(a)
+        };
+        F.prototype.set = function(a, b) {
+          var c = U(this, a),
+            d = c.size;
+          return c.set(a, b), this.size += c.size == d ? 0 : 1, this
+        };
+        var Wb = 200;
+        G.prototype.clear = function() {
+          this.__data__ = new x;
+          this.size = 0
+        };
+        G.prototype["delete"] = function(a) {
+          var b = this.__data__;
+          a = b["delete"](a);
+          return this.size = b.size, a
+        };
+        G.prototype.get = function(a) {
+          return this.__data__.get(a)
+        };
+        G.prototype.has = function(a) {
+          return this.__data__.has(a)
+        };
+        G.prototype.set = function(a, b) {
+          var c = this.__data__;
+          if (c instanceof x) {
+            var d = c.__data__;
+            if (!Sa || d.length < Wb - 1) return d.push([a, b]), this.size = ++c.size, this;
+            c = this.__data__ = new F(d)
+          }
+          return c.set(a, b), this.size = c.size, this
+        };
+        var V = function() {
+            try {
+              var a = ea(Object, "defineProperty");
+              return a({}, "", {}), a
+            } catch (b) {}
+          }(),
+          Ta = "object" == typeof exports && exports && !exports.nodeType && exports,
+          Ua = Ta && "object" == typeof module && module && !module.nodeType && module,
+          Va = Ua && Ua.exports === Ta ? D.Buffer : void 0,
+          Ba = Va ? Va.allocUnsafe : void 0,
+          za = D.Uint8Array,
+          Wa = Object.create,
+          Gb = function() {
+            function a() {}
+            return function(b) {
+              if (!y(b)) return {};
+              if (Wa) return Wa(b);
+              a.prototype = b;
+              b = new a;
+              return a.prototype = void 0, b
+            }
+          }(),
+          Ca = xa(Object.getPrototypeOf, Object),
+          Db = "[object Object]",
+          Xb = Function.prototype,
+          Yb = Object.prototype,
+          Da = Xb.toString,
+          Eb = Yb.hasOwnProperty,
+          Fb = Da.call(Object),
+          Bb = Object.prototype.hasOwnProperty,
+          zb = Object.prototype.hasOwnProperty,
+          Ga = Math.max,
+          Zb = V ? function(a, b) {
+            return V(a, "toString", {
+              configurable: !0,
+              enumerable: !1,
+              value: (c = b, function() {
+                return c
+              }),
+              writable: !0
+            });
+            var c
+          } : ca,
+          $b = 800,
+          ac = 16,
+          bc = Date.now,
+          Ib = function(a) {
+            var b = 0,
+              c = 0;
+            return function() {
+              var d = bc(),
+                g = ac - (d - c);
+              if (c = d, 0 < g) {
+                if (++b >= $b) return arguments[0]
+              } else b = 0;
+              return a.apply(void 0, arguments)
+            }
+          }(Zb);
+        var Xa = function(a, b, c) {
+          Ea(a, b, c)
+        };
+        Hb(function(a, b) {
+          var c = -1,
+            d = b.length,
+            g = 1 < d ? b[d - 1] : void 0,
+            k = 2 < d ? b[2] : void 0;
+          g = 3 < Xa.length && "function" == typeof g ? (d--, g) : void 0;
+          var e;
+          if (e = k) {
+            e = b[0];
+            var f = b[1];
+            if (y(k)) {
+              var l = typeof f;
+              e = !!("number" == l ? M(k) && sa(f, k.length) : "string" == l && f in k) && S(k[f], e)
+            } else e = !1
+          }
+          e && (g = 3 > d ? void 0 : g, d = 1);
+          for (a = Object(a); ++c < d;)(e = b[c]) && Xa(a, e, c, g);
+          return a
+        });
+        var z = function() {
+            return D.Date.now()
+          },
+          Y = "beforeunload",
+          Z = "popstate",
+          ma = 0,
+          P = !0,
+          Ya = null,
+          na = z(),
+          oa = z(),
+          cc = function() {
+            ma += z() - na;
+            P = !0
+          },
+          A = function() {
+            P && (P = !1, na = z());
+            t.clearTimeout(Ya);
+            Ya = t.setTimeout(cc, 3E3)
+          },
+          pa = function() {
+            var a = ma + (z() - na);
+            return P && (a = ma), a
+          };
+        R.register(function() {
+          v("click", A);
+          v("mousedown", A);
+          v("keydown", A);
+          v("scroll", A);
+          v("mousemove", A);
+          v("touchstart", A);
+          v("touchmove", A);
+          v("touchend", A);
+          v(Y, function() {
+            Q("Before Unload", {
+              timeEngaged: pa(),
+              timeElapsed: z() - oa
+            })
+          });
+          v(Z, function() {
+            Q("popstate", {
+              timeEngaged: pa(),
+              timeElapsed: z() - oa
+            })
+          })
+        });
+        ! function(a, b) {
+          a(b = {
+            exports: {}
+          }, b.exports)
+        }(function(a, b) {
+          a.exports = function() {
+            function c() {
+              for (var d = arguments, g = 0, k = {}; g < arguments.length; g++) {
+                var e = d[g],
+                  f;
+                for (f in e) k[f] = e[f]
+              }
+              return k
+            }
+            return function k(g) {
+              function e() {}
+
+              function f(h, r, m) {
+                if ("undefined" != typeof document) {
+                  "number" == typeof(m = c({
+                    path: "/"
+                  }, e.defaults, m)).expires && (m.expires = new Date(1 * new Date + 864E5 * m.expires));
+                  m.expires = m.expires ? m.expires.toUTCString() : "";
+                  try {
+                    var u = JSON.stringify(r);
+                    /^[\{\[]/.test(u) && (r = u)
+                  } catch (n) {}
+                  r = g.write ? g.write(r, h) : encodeURIComponent(String(r)).replace(/%(23|24|26|2B|3A|3C|3E|3D|2F|3F|40|5B|5D|5E|60|7B|7D|7C)/g, decodeURIComponent);
+                  h = encodeURIComponent(String(h)).replace(/%(23|24|26|2B|5E|60|7C)/g, decodeURIComponent).replace(/[\(\)]/g, escape);
+                  u = "";
+                  for (var w in m) m[w] && (u += "; " + w, !0 !== m[w] && (u += "\x3d" + m[w].split(";")[0]));
+                  return document.cookie = h + "\x3d" + r + u
+                }
+              }
+
+              function l(h, r) {
+                if ("undefined" != typeof document) {
+                  for (var m = {}, u = document.cookie ? document.cookie.split("; ") : [], w = 0; w < u.length; w++) {
+                    var n = u[w].split("\x3d"),
+                      q = n.slice(1).join("\x3d");
+                    r || '"' !== q.charAt(0) || (q = q.slice(1, -1));
+                    try {
+                      var C = n[0].replace(/(%[0-9A-Z]{2})+/g, decodeURIComponent);
+                      if (q = (g.read || g)(q, C) || q.replace(/(%[0-9A-Z]{2})+/g, decodeURIComponent), r) try {
+                        q = JSON.parse(q)
+                      } catch (W) {}
+                      if (m[C] = q, h === C) break
+                    } catch (W) {}
+                  }
+                  return h ? m[h] : m
+                }
+              }
+              return e.set = f, e.get = function(h) {
+                return l(h, !1)
+              }, e.getJSON = function(h) {
+                return l(h, !0)
+              }, e.remove = function(h, r) {
+                f(h, "", c(r, {
+                  expires: -1
+                }))
+              }, e.defaults = {}, e.withConverter = k, e
+            }(function() {})
+          }();
+          a = void 0;
+          !a
+        });
+        ! function(a, b, c) {
+          var d,
+            g = b || 15,
+            k = !1,
+            e = function(f) {
+              var l = pa(),
+                h = {
+                  reportSecPre: b,
+                  timeEngaged: parseInt(l),
+                  timeElapsed: z() - oa
+                };
+              !k && l > 1E3 * g && 36E5 > l ? (c(h), Q(a, h), k = !0) : (l = 1E3 * g - l, P && 500 > l && (l = 500), t.clearTimeout(d), d = t.setTimeout(e, l));
+              f && f.type === Y && t.removeEventListener(Y, e);
+              f && f.type === Z && t.removeEventListener(Z, e)
+            };
+          R.register(function() {
+            return v(Y, e), v(Z, e), d = t.setTimeout(e, 1E3 * g), {
+              contentEngagementLoaded: !0
+            }
+          })
+        }("Content Viewed", 20, function(a) {
+          a.debugText = "Target time for Content Viewed is 20 seconds."
+        });
+        R.init()
+      }(window, document);
+    </script> -->
+  </body>
+</html>
+</apex:page>

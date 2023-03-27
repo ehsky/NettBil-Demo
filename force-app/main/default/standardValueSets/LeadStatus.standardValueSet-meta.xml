@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Discard</fullName>
+        <default>false</default>
+        <label>Discard</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>New</fullName>
+        <default>true</default>
+        <label>New</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Marketing</fullName>
+        <default>false</default>
+        <label>Marketing</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Sales</fullName>
+        <default>false</default>
+        <label>Sales</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed</fullName>
+        <default>false</default>
+        <label>Closed</label>
+        <converted>true</converted>
+    </standardValue>
+</StandardValueSet>

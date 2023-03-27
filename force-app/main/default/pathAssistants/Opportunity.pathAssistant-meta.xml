@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Opportunity</entityName>
+    <fieldName>StageName</fieldName>
+    <masterLabel>Opportunity</masterLabel>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Bilen leveres av kunde til nærmeste testsenter.&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;https://www.nettbil.no/assets/imgs/logo_viking.png&quot;&gt;&lt;/img&gt;&lt;/p&gt;</info>
+        <picklistValueName>Assesment</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Bilen legges ut for salg til forhandlere.&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;https://www.nettbil.no/assets/imgs/process_3.png&quot;&gt;&lt;/img&gt;&lt;/p&gt;</info>
+        <picklistValueName>Auction</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;strong&gt;Gjennomføring av verdivurdering&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Steg 1&lt;/li&gt;&lt;li&gt;Steg 2&lt;/li&gt;&lt;li&gt;Steg 3&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Value Assessment</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Forventet estimat i budrunde oversendes til kunde.&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;https://www.nettbil.no/assets/imgs/process_1.png&quot;&gt;&lt;/img&gt;&lt;/p&gt;</info>
+        <picklistValueName>Value Proposition</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>__MASTER__</recordTypeName>
+</PathAssistant>
