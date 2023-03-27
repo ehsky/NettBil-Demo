@@ -9,6 +9,8 @@ This demo includes a simple web to lead form that creates a lead in Salesforce.
 
 ## Hands-on demo in Salesforce org
 
+Note: The deployment site requieres that this repo is public under deployment. Remember to make it private again after the demo.
+
 You can quickly spin up an org by clicking on the picture below. \
 This will create a scratch org that you have access to for 1 day \
 [![Demo scratch org](/.assets/deployDemo.png)](https://hosted-scratch.herokuapp.com/launch?template=https://github.com/ehsky/Nettbil-demo)
